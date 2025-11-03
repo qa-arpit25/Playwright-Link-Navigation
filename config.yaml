@@ -1,0 +1,2 @@
+base_url: "https://muvro-frontend.vercel.app/"   #Replace with your desired base URL
+report_path: "reports/link_report.xlsx"
