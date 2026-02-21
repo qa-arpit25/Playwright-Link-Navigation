@@ -56,6 +56,4 @@ project/
 
 
 
-Just tell me 👍.
 
-Is this conversation helpful so far?
