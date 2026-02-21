@@ -1,23 +1,61 @@
-# 🔍 Playwright API Route Extractor
+Automated Link Navigation Testing with Pytest + Playwright + Allure
 
-This project automatically extracts and saves **API routes (GET, POST, PUT, DELETE, etc.)** from any website using **Playwright with Python**.  
-All captured routes are saved into an **Excel file** with columns for HTTP Method and URL.
+This project provides an automated test to validate all internal website links using Pytest, Playwright, and Allure Reporting.
+It scans a website, filters unique internal links, validates HTTP responses, and generates an execution report including an Excel summary.
 
----
+🚀 Features
+✅ Collect all links from the homepage
+✅ Filter only same-domain internal links
+✅ Remove duplicates automatically
+✅ Validate HTTP status codes
+✅ Detect redirects (301 / 302)
+✅ Generate Excel report
+✅ Attach detailed results in Allure Report
+✅ Execution summary with pass/fail statistics
+✅ Throttling to prevent server overload
+✅ Handles dynamic pages rendered via JavaScript
 
-## 🚀 Features
-- Detects API calls dynamically from network traffic
-- Captures all HTTP methods (GET, POST, PUT, DELETE, etc.)
-- Exports data into an Excel file (`sitename_routes.xlsx`)
-- Auto-generates file names based on the website domain
-- Works for both static and SPA (Single Page App) websites
-- Fully Python-based — no manual crawling needed
+🧪 Test Scenario Covered
 
----
+The automation verifies:
+1. Broken links
+2. Redirect links
+3. Valid working pages
+4. Duplicate URLs
+5. External links filtering
+6. Infinite crawl prevention
 
-## 🧰 Requirements
-Make sure you have the following installed:
+📂 Project Structure (Example)
+project/
+│── pages/
+│   └── home_page.py
+│
+│── tests/
+│   └── test_navigation.py
+│
+│── utils/
+│   └── excel_report.py
+│
+│── conftest.py
+│── requirements.txt
+│── README.md
 
-```bash
-pip install -r requirements.txt
-playwright install
+
+⚙️ Tech Stack
+
+1. Python
+2. Pytest
+3. Playwright
+4. Allure Reporting
+5. OpenPyXL / Pandas (for Excel report)
+
+
+
+
+
+
+
+
+Just tell me 👍.
+
+Is this conversation helpful so far?
